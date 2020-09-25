@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from restapi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+    path('restapi/task/string/', views.taskstring, name='restapi_task_string'),
+    path('restapi/task/xml/', views.taskxml, name='restapi_task_xml'),
+    path('restapi/task/json/', views.taskjson, name='restapi_task_json'),
 ]
