@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello, Django!")
+    return HttpResponse("Hello, I am IRONMAN!")
 
 def taskstring(request):
     result = 'Rest API string!'
